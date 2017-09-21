@@ -28,8 +28,8 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 
 # Exports
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="/usr/lib/ccache/bin/:$PATH"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export EDITOR=nvim
 export ANDROID_HOME=/opt/android-sdk
@@ -45,3 +45,5 @@ alias v=/usr/bin/nvim
 alias vim=/usr/bin/nvim
 
 export KEYTIMEOUT=1
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
