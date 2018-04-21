@@ -3,10 +3,8 @@ source /home/ted/.config/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle git
-
-antigen bundle archlinux
-
-antigen theme wezm
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
 
 antigen apply
 
@@ -32,6 +30,7 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/lib/ccache/bin/:$PATH"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export EDITOR=nvim
+export VISUAL=nvim
 export ANDROID_HOME=/opt/android-sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
@@ -43,6 +42,13 @@ unset MAILCHECK
 
 alias v=/usr/bin/nvim
 alias vim=/usr/bin/nvim
+alias s=startx
+alias jira=/home/ted/go/bin/jira
+alias j=/home/ted/go/bin/jira
+alias ja="/home/ted/go/bin/jira active"
+alias jv="/home/ted/go/bin/jira view"
+alias jb="/home/ted/go/bin/jira browse"
+alias jt="/home/ted/go/bin/jira transition --noedit"
 
 export KEYTIMEOUT=1
 
